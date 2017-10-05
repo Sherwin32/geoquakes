@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <!-- set viewport to device width to allow responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,23 +22,32 @@
     <script src="scripts/app.js"></script>
 
     <title>Quake Watch</title>
-  </head>
-  <body>
-      <div class="container">
+</head>
+
+<body>
+    <div class="container">
         <div class="row">
-          <div class="col-md-6">
-            <div id="map">
-              <!-- Map here -->
+            <div class="col-md-6">
+                <div id="map">
+                    <!-- Map here -->
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1>Earthquakes from the past:</h1>
+                <label for="minMagnitude">Input minimum magnitude</label>
+                <input id="minMagnitude" type="number" class="add" id="left" placeholder="Default is 3">
+                <button id="weekBtn">Week</button>
+                <button id="dayBtn">Day</button>
+
+
+                <div id="info">
+                    <!-- <p>M 4.2 - 1km ESE of Fontana, California / 123 hours ago </p> -->
+                </div>
 
             </div>
-          </div>
-          <div class="col-md-6">
-            <div id="info">
-              <h1>Earthquakes from the past week:</h1>
-              <!-- <p>M 4.2 - 1km ESE of Fontana, California / 123 hours ago </p> -->
-            </div>
-          </div>
         </div>
-      </div>
-  </body>
+    </div>
+</body>
+
 </html>
